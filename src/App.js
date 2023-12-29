@@ -1,8 +1,13 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 const App = () => {
     return (
-        <h1>Hello World</h1>
+        <>
+            <Navbar />
+            <Outlet />
+        </>
     )
 }
 
